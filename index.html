@@ -1,81 +1,23 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Personal Data Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Tambahkan link ke Font Awesome CSS -->
-    <style>
-        .card-container {
-            display: flex;
-            justify-content: center; /* Ratakan secara horizontal */
-            align-items: center;
-            flex-wrap: wrap; /* Mengatur agar card-card dapat meluncur ke bawah jika tidak cukup ruang */
-        }
+        <meta charset="UTF-8">
+        <meta http-equive="X-UA-Compatible" content="IE=edge">
+        <title>Personal Data Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> <!-- Tambahkan link ke Font Awesome CSS -->
     
-        .card {
 
-            /* Add shadows to create the "card" effect */
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            height: 365px;
-            width: 260px;
-            padding: 20px 35px;
-            background: #141414;
-            border-radius: 30px;
-            margin: 10px; /* Jarak antara card-card */
-            position: relative;
-            overflow: hidden;
-            text-align: center;
-            border: 1px solid red;
-        }
-    
-        /* On mouse-over, add a deeper shadow */
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-    
-        /* Style for card icons */
-        .card i {
-            font-size: 50px;
-            display: block;
-            text-align: center;
-            margin: 30px 0;
-            color: red;
-        }
-    
-        /* Style for card title */
-        .card h5 {
-            color: white;
-            font-size: 23px;
-            margin-bottom: 15px;
-        }
-    
-        /* Style for card content paragraph */
-        .card p {
-            color: #fcfcfc;
-            font-size: 12px;
-            line-height: 27px;
-            margin-bottom: 25px;
-            text-align: justify;
-        }
-    
-        .card a:hover {
-            background-color: transparent;
-            border: 2px solid red;
-        }
-    
-        *{
+        <style>
+    *{
              margin: 0;
              padding: 0;
              box-sizing: border-box;
         }
 
         .body{
-            margin: 0px;
             font-family: 'Segoe UI';
             font-weight: 400;
             background-color: #333;
@@ -84,8 +26,6 @@
         .footer{
             padding: 40px 0;
             background-color: #333;
-            position: relative;
-            top: 400px;
         }
 
         .footer .social{
@@ -119,94 +59,50 @@
             font-weight: bold;
             color: white;
         }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="img/logo.jpeg" class="logo">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>  
+                </ul>
+            </nav>
 
-        .pra{
-            color: white;
-            font-size: 12px;
-        }
-    
-        /* Hover effect untuk tautan di footer */
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-<div class="container">
-    <div class="hero">
-        <nav>
-            <img src="img/logo.jpeg" class="logo">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>  
-            </ul>
-        </nav>
-
-        <section class="HOME">
-            <div class="detel">
-                <h1>I'm <span>Shifa</span>
-                    <br> Azika Hafsara</h1>
-                <p>This is my official personal data website
-                    <br> to show all details about me.
-                </p>
-                <div class="news">
-                    <form action="">
-                        <input type="email" name="email" placeholder="input your email" id="mail">
-                        <input type="submit" value="Let's To Start" name="submit">
-                    </form>
-            </div>
-        </section>
-        <br>
-        <br>
-        <div class="card-container">
-            <div class="card">
-                <i class="fas fa-pencil-alt"></i> <!-- Ganti kelas ikon sesuai keinginan -->
-                <h5>BIODATA</h5>
-                <div class="pra">
-                    <p>
-                        <span>Name :</span> Shifa Azika Hafsara
-                        <span>Place/Date of Birth :</span> Tanjungpinang, 17 February 2007
-                        <span>Address :</span> Taman Harapan Indah, Block A1 Number 22
-                        <br><span>State :</span> Indonesia
+            <section class="HOME">
+                <div class="detel">
+                    <h1>I'm <span>Shifa</span>
+                        <br> Azika Hafsara</h1>
+                    <p>This is my official personal data website
+                        <br> to showes all details about me.
                     </p>
-                    <p style="text-align: left;"></p>
+                    <div class="news">
+                        <form action="">
+                            <input type="email" name="email" placeholder="input your email" id="mail">
+                            <input type="submit" value="Let's To Start" name="submit">
+                        </form>
                 </div>
-            </div>
-            <div class="card">
-                <i class="fas fa-fist-raised"></i> <!-- Ganti kelas ikon sesuai keinginan -->
-                <h5>DESCRIPTION</h5>
-                <div class="pra">
-                    <p>Bonjour mon ami, I'm Shifa, i study at SMKN 1 Tanjungpinang (vocational high school) with a major or skill competency, Sharia Banking Service. My dream is to become a flight attendant.</p>
-                    <p style="text-align: center;"></p>
-                </div>
-            </div>
-            <div class="card">
-                <i class="fas fa-microphone"></i> <!-- Ganti kelas ikon sesuai keinginan -->
-                <h5>HOBBY</h5>
-                <div class="pra">
-                    <p>My hobbies are singing and dancing. Painting is also one of my favorite activities because painting makes me feel happy, singing also relieves my stress. My favorite artists are BlackPink, The Weeknd, and Chase Atlantic.</p>
-                    <p style="text-align: center;"></p>
-                </div>
-            </div>
-        </div>
-        <div class="images">
-            <img src="img/shape.png" class="shape">
-            <img src="img/shifa1-removebg-preview.png" class="shifa1-removebg-preview">
-        </div>
-    </div>
-    <section class="footer">
-        <div class="social">
-            <p><h3>CONTACT US</h3></p>
+            </section>
+            <div class="images">
+                <img src="img/shape.png" class="shape">
+                <img src="img/shifa1-removebg-preview.png" class="shifa1-removebg-preview">
+            </div> 
             <br>
-            <a href="https://wa.me?+62-831-8551-0961"><i class="fab fa-whatsapp" target="_blank"></i></a>
-            <a href="https://www.tiktok.com/@arasfhas"><i class="fab fa-tiktok" target="_blank"></i></a>
-            <a href="https://www.instagram.com/sahfsaraa"><i class="fab fa-instagram" target="_blank"></i></a>
-            <a href="mailto:shifaazikah17@gmail.com "><i class="fas fa-envelope-open-text" target="_blank"></i></a>
-        </div>
-        <p class="copyright">
-            © sahfsaraa's web @2023
-        </p>
-    </section>
-</div>
-</body>
+            <br>
+            <section class="footer">
+                <div class="social">
+                    <p><h3>CONTACT US</h3></p>
+                    <br>
+                    <a href="https://wa.me?+62-831-8551-0961"><i class="fab fa-whatsapp" target="_blank"></i></a>
+                    <a href="https://www.tiktok.com/@arasfhas"><i class="fab fa-tiktok" target="_blank"></i></a>
+                    <a href="https://www.instagram.com/sahfsaraa"><i class="fab fa-instagram" target="_blank"></i></a>
+                    <a href="mailto:shifaazikah17@gmail.com "><i class="fas fa-envelope-open-text" target="_blank"></i></a>
+                </div>
+                <p class="copyright">
+                    © sahfsaraa's web @2023
+                </p>
+            </section>
+    </body>
 </html>
